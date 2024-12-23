@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { VideoPlayer } from './VideoPlayer';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -64,7 +65,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
+     {/* <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
@@ -92,6 +93,8 @@ function App(): React.JSX.Element {
           <LearnMoreLinks />
         </View>
       </ScrollView>
+      */}
+      <VideoPlayer></VideoPlayer>
     </SafeAreaView>
   );
 }
